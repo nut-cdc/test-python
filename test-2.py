@@ -114,15 +114,16 @@
 
 # 2.12 --------------------- Hourly Wage Calculator --------------------- 
 
-# original_hourly_wage = 10
-# increase_percentage = 3
-# # decrease_percentage = 3
+# hourly_wage = 10
+# raise_wage = 0.03
 # good_years = 5
 # bad_years = 2
-# increase_hourly_wage = original_hourly_wage * ((1 + increase_percentage)) ** good_years
-# # decrease_hourly_wage = (original_hourly_wage * ((1 + decrease_percentage))) ** bad_years
-# # new_hourly_wage = original_hourly_wage + increase_hourly_wage - decrease_hourly_wage
-# print("New hourly wage: ", (original_hourly_wage * 100) + (increase_hourly_wage / 100))
+
+# increase_hourly_wage = hourly_wage * ((1 + raise_wage)**good_years)
+# decrease_hourly_wage = hourly_wage * ((1 + raise_wage)**bad_years)
+
+# new_hourly_wage = hourly_wage + increase_hourly_wage - decrease_hourly_wage
+# print("New hourly wage: ", new_hourly_wage)
 
 # 2.14 --------------------- Target Heart-Rate Calculator --------------------- 
 
@@ -136,22 +137,57 @@
 
 # 2.15 --------------------- Sort in Ascending Order --------------------- 
 
-print("----------Runner 1----------")
-time_runner1_1 = float(input("Enter first time in seconds: "))
-time_runner1_2 = float(input("Enter second runner in seconds: "))
-time_runner1_3 = float(input("Enter third runner in seconds: "))
+# print("----------Runner 1----------")
+# time_runner1_1 = float(input("Enter first time in seconds: "))
+# time_runner1_2 = float(input("Enter second runner in seconds: "))
+# time_runner1_3 = float(input("Enter third runner in seconds: "))
+# min_runner1 = min(time_runner1_1, time_runner1_2, time_runner1_3)
+# max_runner1 = max(time_runner1_1, time_runner1_2, time_runner1_3)
+# middle_runner1 = 0
+# if(time_runner1_1 != min_runner1):
+#     if(time_runner1_1 != max_runner1):
+#         middle_runner1 = time_runner1_1
+# if(time_runner1_2 != min_runner1):
+#     if(time_runner1_2 != max_runner1):
+#         middle_runner1 = time_runner1_2
+# if(time_runner1_3 != min_runner1):
+#     if(time_runner1_3 != max_runner1):
+#         middle_runner1 = time_runner1_3
 
-print("\n----------Runner 2----------")
-time_runner2_1 = float(input("Enter first time in seconds: "))
-time_runner2_2 = float(input("Enter second runner in seconds: "))
-time_runner2_3 = float(input("Enter third runner in seconds: "))
+# print("\n----------Runner 2----------")
+# time_runner2_1 = float(input("Enter first time in seconds: "))
+# time_runner2_2 = float(input("Enter second runner in seconds: "))
+# time_runner2_3 = float(input("Enter third runner in seconds: "))
+# min_runner2 = min(time_runner2_1, time_runner2_2, time_runner2_3)
+# max_runner2 = max(time_runner2_1, time_runner2_2, time_runner2_3)
+# middle_runner2 = 0
+# if(time_runner2_1 != min_runner1):
+#     if(time_runner2_1 != max_runner2):
+#         middle_runner2 = time_runner2_1
+# if(time_runner2_2 != min_runner2):
+#     if(time_runner2_2 != max_runner2):
+#         middle_runner2 = time_runner2_2
+# if(time_runner2_3 != min_runner2):
+#     if(time_runner2_3 != max_runner2):
+#         middle_runner2 = time_runner2_3
 
-print("\n----------Runner 3----------")
-time_runner3_1 = float(input("Enter first time in seconds: "))
-time_runner3_2 = float(input("Enter second runner in seconds: "))
-time_runner3_3 = float(input("Enter third runner in seconds: "))
+# print("\n----------Runner 3----------")
+# time_runner3_1 = float(input("Enter first time in seconds: "))
+# time_runner3_2 = float(input("Enter second runner in seconds: "))
+# time_runner3_3 = float(input("Enter third runner in seconds: "))
+# min_runner3 = min(time_runner3_1, time_runner3_2, time_runner3_3)
+# max_runner3 = max(time_runner3_1, time_runner3_2, time_runner3_3)
+# middle_runner3 = 0
+# if(time_runner3_1 != min_runner3):
+#     if(time_runner3_1 != max_runner3):
+#         middle_runner3 = time_runner3_1
+# if(time_runner3_2 != min_runner3):
+#     if(time_runner3_2 != max_runner3):
+#         middle_runner3 = time_runner3_2
+# if(time_runner3_3 != min_runner3):
+#     if(time_runner3_3 != max_runner3):
+#         middle_runner3 = time_runner3_3
 
-# print("Lowest time: ", )
-# print("Second time: ", )
-# print("Highest time: ", )
-print("Times in increasing order: ", times)
+# print("Times in increasing order for runner 1: ", min_runner1, "-", middle_runner1, "-", max_runner1)
+# print("Times in increasing order for runner 2: ", min_runner2, "-", middle_runner2, "-", max_runner2)
+# print("Times in increasing order for runner 3: ", min_runner3, "-", middle_runner3, "-", max_runner3)
